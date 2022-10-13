@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_13_100653) do
+ActiveRecord::Schema.define(version: 2022_10_13_143505) do
 
   create_table "properties", force: :cascade do |t|
     t.string "name"
@@ -26,9 +26,6 @@ ActiveRecord::Schema.define(version: 2022_10_13_100653) do
     t.string "train"
     t.string "home"
     t.integer "walking"
-    t.string "train2"
-    t.string "home2"
-    t.integer "walking2"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "property_id", null: false
