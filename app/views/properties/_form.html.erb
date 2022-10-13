@@ -35,6 +35,27 @@
     <%= form.label :note %>
     <%= form.text_area :note %>
   </div>
+<%= form.fields_for :stations do | station | %>
+  <%= station.label :train, "路線" %>
+  <%= station.text_field :train %>
+
+  <%= station.label :home, "駅" %>
+  <%= station.text_field :home %>
+
+  <%= station.label :walking, "徒歩" %>
+  <%= station.text_field :walking %>
+
+
+  <%= station.label :train2, "路線" %>
+  <%= station.text_field :train2 %>
+
+  <%= station.label :home2, "駅" %>
+  <%= station.text_field :home2 %>
+
+  <%= station.label :walking2, "徒歩" %>
+  <%= station.text_field :walking2 %>
+
+<% end %>
 
   <div class="actions">
     <%= form.submit %>
