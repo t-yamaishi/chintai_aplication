@@ -25,19 +25,30 @@
   <%= @property.note %>
 </p>
 
+<% count = 0 %>
+
 <% @property.stations.each do |form| %>
 
 <p>
   <strong>路線:</strong>
   <%= form.train %>
-  <p>
+</p>
+
+<p>
   <strong>駅:</strong>
   <%= form.home %>
 </p>
+
 <p>
   <strong>徒歩:</strong>
   <%= form.walking %>
 </p>
+
+<% count += 1 %>
+
+<p>
+  <strong>登録駅数:</strong>
+  <%= count %>
 </p>
 
 
