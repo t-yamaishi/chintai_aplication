@@ -25,5 +25,23 @@
   <%= @property.note %>
 </p>
 
+<% @property.stations.each do |form| %>
+
+<p>
+  <strong>路線:</strong>
+  <%= form.train %>
+  <p>
+  <strong>駅:</strong>
+  <%= form.home %>
+</p>
+<p>
+  <strong>徒歩:</strong>
+  <%= form.walking %>
+</p>
+</p>
+
+
+<% end %>
+
 <%= link_to 'Edit', edit_property_path(@property) %> |
 <%= link_to 'Back', properties_path %>

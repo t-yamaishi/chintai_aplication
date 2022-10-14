@@ -8,6 +8,7 @@ class PropertiesController < ApplicationController
 
 
   def show
+
   end
 
 
@@ -19,6 +20,7 @@ class PropertiesController < ApplicationController
 
 
   def edit
+    @property.stations.new
   end
 
 
