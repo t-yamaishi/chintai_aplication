@@ -102,6 +102,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.12.4-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.12.4-x86_64-darwin)
+      racc (~> 1.4)
     public_suffix (4.0.6)
     puma (4.3.8)
       nio4r (~> 2.0)
@@ -131,6 +133,9 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
+    rails-i18n (7.0.5)
+      i18n (>= 0.7, < 2)
+      railties (>= 6.0.0, < 8)
     railties (6.0.3)
       actionpack (= 6.0.3)
       activesupport (= 6.0.3)
@@ -198,6 +203,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-20
+  x86_64-darwin-21
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
@@ -207,6 +213,7 @@ DEPENDENCIES
   listen (~> 3.2)
   puma (~> 4.1)
   rails (= 6.0.3)
+  rails-i18n
   sass-rails (>= 6)
   selenium-webdriver
   spring
@@ -222,4 +229,4 @@ RUBY VERSION
    ruby 3.0.1p64
 
 BUNDLED WITH
-   2.2.21
+   2.3.23
